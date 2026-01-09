@@ -1,17 +1,25 @@
 {
-  "name": "portofolio_bagus",
+  "name": "dw_uas_nopilestari_d1a250020_1a",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "tailwind.config.js",
   "scripts": {
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nopilestari607-arch/DW_UAS_NOPILESTARI_D1A250020_1A.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nopilestari607-arch/DW_UAS_NOPILESTARI_D1A250020_1A/issues"
+  },
+  "homepage": "https://github.com/nopilestari607-arch/DW_UAS_NOPILESTARI_D1A250020_1A#readme",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.17",
-    "tailwindcss": "^4.1.17"
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
   }
 }
