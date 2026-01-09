@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Tailwind CSS</title>
+    <link href="src/output.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- PRELOADER -->
+    <div id="preloader" class="fixed inset-0 bg-white flex items-center justify-center z-9999">
+        <div class="loader w-12 h-12 border-4 border-slate-300 border-t-sky-500 rounded-full animate-spin"></div>
+    </div>
+    <!-- END PRELOADER -->
+    <!-- Header Start  -->
+    <header class="absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="flex items-center gap-2">
+                        <img src="img/GOLO NOVI-Picsart-BackgroundRemover.png" alt="Logo"
+                            class="h-30 w-auto transition duration-100 dark:invert" />
+                    </a>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <nav id="nav-menu"
+                        class="hidden absolute py-5 bg-white dark:bg-slate-900 dark:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex lg:items-center"">
+                            <li class=" group">
+                            <a href="#home"
+                                class="text-base text-dark dark:text-white py-2 mx-8 flex group-hover:text-sky-400">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-sky-400">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#gallery"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-sky-400">Gallery</a>
+                            </li>
+                            <li class="group">
+                                <a href="#clients"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-sky-400">Clients</a>
+                            </li>
+                            <li class="group">
+                                <a href="#blog"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-sky-400">Blog</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-sky-400">Contacs</a>
+                            </li>
+                            <!-- 🔥 Dark Mode Toggle as Navbar Item -->
+                            <li class="group lg:ml-4 mt-3 lg:mt-0 mx-8 lg:mx-0">
+                                <button id="dark-toggle" class="relative w-10 h-9 rounded-full flex justify-center
+           bg-slate-200 dark:bg-slate-700 transition">
+                                    <span id="icon-sun-moon"
+                                        class="block w-7 h-6 transition-transform duration-500 ease-in-out">
+                                    </span>
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center gap-8 lg:gap-0">
+                <!-- Left Section Start -->
+                <div class="w-full px-4 lg:w-1/2">
+                    <h1 class="text-base font-semibold text-sky-400 md:text-xl">
+                        Halo Semua 👋, saya
+                        <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">
+                            Nopi Lestari
+                        </span>
+                    </h1>
+                    <h2 class="font-medium text-slate-500 text-lg mb-5 mt-3 lg:text-2xl">
+                        <span id="typingText" class="text-dark"></span>
+                        <span class="border-r-2 border-dark animate-pulse ml-1"></span>
+                    </h2>
+                    <p class="font-medium text-slate-400 mb-7 leading-relaxed">
+                        Belajar Desain Web itu mudah dan menyenagkan bukan.
+                        <span class="text-dark font-bold">Bukan!</span>
+                    </p>
+                    <button class="text-base font-semibold text-white bg-sky-500 py-3 px-8 rounded-full 
+                               hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+                        Hubungi Saya
+                    </button>
+                </div>
+                <!-- Left Section End -->
+                <!-- Right Section Start -->
+                <div class="w-full px-4 lg:w-1/2 flex justify-center lg:justify-end">
+                    <div class="relative mt-10 lg:mt-0">
+                        <img src="img/pink-Picsart-BackgroundRemover (1).jpg" alt="Nopi Lestari"
+                            class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto" />
+                        <!-- Dekorasi Blob -->
+                        <span class="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2 md:scale-125">
+                            <svg width="400" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#3B82F6"
+                                    d="M70.9,-16.8C79.5,3.4,65.5,37.1,40.2,55.6C14.8,74.1,-21.9,77.4,-40.9,62.2C-60,46.9,-61.4,13.3,-51.6,-8.6C-41.9,-30.4,-20.9,-40.4,5.1,-42C31.2,-43.7,62.4,-37,70.9,-16.8Z"
+                                    transform="translate(100 100) scale(1.1)" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <!-- Right Section End -->
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+    <!-- About Section Start -->
+    <section id="about" class="pt-36 pb-32">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-start lg:items-center">
+                <!-- Left Content -->
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h4 class="font-bold uppercase text-sky-400 text-lg mb-3">Tentang Saya</h4>
+                    <h2 class="font-bold text-dark text-3xl lg:text-4xl mb-5 max-w-md">
+                        Yuk, Belajar web desain dengan Tailwind CSS!
+                    </h2>
+                    <p class="font-medium text-base lg:text-lg text-slate-500 max-w-xl leading-relaxed">Saya lulusan dari Madrasah Aliyah, 
+                        lalu nekat masuk ke Sistem Informasi yang minim pengetahuan IT. 
+                        Banyak bingung di awal, tapi pelan-pelan belajar dan bertahan sampai sekarang pelan-pelan mulai ngerti.!
+                    </p>
+                </div>
+                <!-- Right Content -->
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="font-semibold text-dark text-2xl lg:text-3xl mb-4 lg:pt-6">
+                        Mari Berteman
+                    </h3>
+                    <p class="font-medium text-base lg:text-lg text-slate-500 mb-6 leading-relaxed">
+                        Bukan anak IT dari awal, masih banyak belajar. Mari berteman, sharing hal baru, dan saling support tanpa tekanan.
+                    </p>
+                    <!-- Social Icons -->
+                    <div class="flex items-center flex-wrap gap-4">
+                        <a href="https://youtube.com/@nopilestari-px1mn?si=k2xv3QX6cffHkWjt" target="_blank" class="social-btn" aria-label="YouTube">
+                            <i data-lucide="youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nop_ilestari?igsh=MTlseGx3b2I0M3Zjbw==" target="_blank" class="social-btn" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="https://x.com/LestariNop78759" target="_blank" class="social-btn" aria-label="X / Twitter">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@nopi_lestar1?_r=1&_t=ZS-92v4l9OGLwI" target="_blank" class="social-btn" aria-label="TikTok">
+                            <i data-lucide="music"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nopi-lestari-6421ab3a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-btn" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+    <!-- Gallery Section Start -->
+    <section id="gallery" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-900">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-sky-400 mb-2">Gallery</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Koleksi Gallery</h2>
+                    <p class="font-medium text-md text-slate-500 md:text-lg">Kumpulan momen santai yang terekam apa adanya,
+                         tanpa pose berlebihan dan tanpa banyak persiapan. Setiap foto menyimpan suasana ringan, 
+                        sederhana, dan potongan waktu kecil yang terlihat biasa, tapi punya cerita dan rasa tersendiri.!</p>
+                </div>
+            </div>
+            <div class="w-full px-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:w-10/12 xl:mx-auto">
+                <!-- Item -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/bor.jpeg" alt="Image 1"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <!-- Overlay -->
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">Image 1</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/tt;'.jpeg" alt="Image 2"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">Image 2</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/ror.jpeg" alt="Image 4"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">Image 3</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/lel.jpeg" alt="Image 4"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">Image 4</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/nyum.jpeg" alt="Image 5"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">Image 5</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/me.jpg" alt="Image 6"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">Image 6</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/pang.jpeg" alt="Image 7"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">Image 7</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/hantu.jpeg" alt="Image 8"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">Image 8</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/81.jpeg" alt="Image 9"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">Image 9</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section End -->
+    <div id="lightbox" class="fixed inset-0 hidden z-9999 bg-black/80 items-center justify-center">
+        <!-- Close -->
+        <button id="lightboxClose" class="absolute top-6 right-6 text-white text-3xl font-bold">
+            &times;
+        </button>
+        <!-- Prev -->
+        <button id="lightboxPrev"
+            class="absolute left-5 md:left-10 text-white text-4xl font-bold hover:text-sky-400 transition">
+            &#10094;
+        </button>
+        <!-- Image -->
+        <img id="lightboxImage"
+            class="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl transition-transform duration-300 scale-95" />
+        <!-- Next -->
+        <button id="lightboxNext"
+            class="absolute right-5 md:right-10 text-white text-4xl font-bold hover:text-sky-400 transition">
+            &#10095;
+        </button>
+    </div>
+    <!-- Clients Section Start -->
+    <section id="clients"
+        class="pt-36 pb-32 bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900 overflow-hidden">
+        <div class="container">
+            <!-- Heading -->
+            <div class="w-full px-4">
+                <div class="mx-auto max-w-xl text-center mb-16">
+                    <h4 class="font-semibold text-lg text-sky-400 mb-2">Aplikasi</h4>
+                    <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">Applikasi favoritku dihp</h2>
+                    <p class="font-medium text-dark text-slate-500 md:text-lg">Aplikasi favorit yang selalu bikin betah, 
+                        sering dibuka cuma buat scrolling santai, update berita, atau lihat hal-hal seru sehari-hari.</p>
+                </div>
+            </div>
+            <!-- Slider -->
+            <div class="relative w-full overflow-hidden">
+                <div class="client-slider flex items-center gap-10">
+                    <!-- DUPLIKASI LOGO (WAJIB UNTUK LOOP HALUS) -->
+                    <div class="client-item">
+                        <img src="img/tiktok-logo-logoeps.png" alt="Google" />
+                    </div>
+                    <div class="client-item">
+                        <img src="img/logo-instagram-4096.png" alt="Microsoft" />
+                    </div>
+                    <div class="client-item">
+                        <img src="img/xex-Picsart-BackgroundRemover (1).jpg" alt="Netflix" />
+                    </div>
+                    <div class="client-item">
+                        <img src="img/clients/youtube.svg" alt="YouTube" />
+                    </div>
+
+                    <!-- DUPLIKAT -->
+                    <div class="client-item">
+                        <img src="img/tiktok-logo-logoeps.png" alt="Google" />
+                    </div>
+                    <div class="client-item">
+                        <img src="img/logo-instagram-4096.png" alt="Microsoft" />
+                    </div>
+                    <div class="client-item">
+                        <img src="img/xex-Picsart-BackgroundRemover (1).jpg" alt="Netflix" />
+                    </div>
+                    <div class="client-item">
+                        <img src="img/clients/youtube.svg" alt="YouTube" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section End -->
+    <!-- Blog Section Start -->
+    <section id="blog" class="pt-36 pb-32 bg-slate-100 dark:bg-slate-900">
+        <div class="container">
+            <!-- Heading -->
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-sky-400 mb-2">Blog</h4>
+                    <h2 class="font-bold text-slate-800 dark:text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">
+                        Fregmenta
+                    </h2>
+                    <p class="font-medium text-slate-500 md:text-lg">
+                    “Fragmenta” adalah kumpulan fragmen momen yang tertangkap dalam bingkai. 
+                    Setiap foto menyimpan cerita sendiri, emosi yang berbeda, dan potongan waktu yang unik, 
+                    bersatu menjadi satu galeri penuh rasa.
+                    </p>
+                </div>
+            </div>
+            <!-- Blog Grid -->
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:w-10/12 xl:mx-auto px-4">
+                <!-- Blog Card -->
+                <article class="group bg-white dark:bg-slate-800 rounded-2xl shadow-lg overflow-hidden
+               transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
+                    <!-- Image -->
+                    <div class="relative overflow-hidden">
+                        <img src="img/lstr.jpeg"
+                            class="w-full h-52 object-cover transition duration-500 group-hover:scale-110"
+                            alt="Blog Image" />
+                        <!-- Category -->
+                        <span
+                            class="absolute top-4 left-4 bg-sky-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                            mpii
+                        </span>
+                    </div>
+                    <!-- Content -->
+                    <div class="p-6">
+                        <p class="text-sm text-slate-500 mb-2">
+                            26 Maret 2025
+                        </p>
+
+                        <h3 class="mb-3">
+                            <a href="#" class="block font-semibold text-xl text-slate-800 dark:text-white
+                      hover:text-sky-500 transition line-clamp-2">
+                                Bukber bersama sepupu
+                            </a>
+                        </h3>
+                        <p class="text-slate-500 mb-6 line-clamp-3">
+                            Belum kelar siap-siap, muka masih seadanya, tapi sepupu udah ribut duluan ngajak bukber.
+                             Acara dadakan, rame dadakan, tapi ga dadakan jadi wacana.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-1 text-sky-500 font-semibold text-sm
+                    transition-all group-hover:gap-2">
+                            Baca Selengkapnya
+                            <span class="text-lg">→</span>
+                        </a>
+                    </div>
+                </article>
+                <article class="group bg-white dark:bg-slate-800 rounded-2xl shadow-lg overflow-hidden
+               transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
+                    <!-- Image -->
+                    <div class="relative overflow-hidden">
+                        <img src="img/nop.jpg"
+                            class="w-full h-52 object-cover transition duration-500 group-hover:scale-110"
+                            alt="Blog Image" />
+                        <!-- Category -->
+                        <span
+                            class="absolute top-4 left-4 bg-sky-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                            mpii
+                        </span>
+                    </div>
+                    <!-- Content -->
+                    <div class="p-6">
+                        <p class="text-sm text-slate-500 mb-2">
+                        6 Agustus 2025
+                        </p>
+                        <h3 class="mb-3">
+                            <a href="#" class="block font-semibold text-xl text-slate-800 dark:text-white
+                      hover:text-sky-500 transition line-clamp-2">
+                                Main bersama sepupu
+                            </a>
+                        </h3>
+                        <p class="text-slate-500 mb-6 line-clamp-3">
+                            Foto: 😐 Asli: 😂 Foto kaku, gaya beku, tapi aslinya lagi seru main bareng sepupu.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-1 text-sky-500 font-semibold text-sm
+                    transition-all group-hover:gap-2">
+                            Baca Selengkapnya
+                            <span class="text-lg">→</span>
+                        </a>
+                    </div>
+                </article>
+                <article class="group bg-white dark:bg-slate-800 rounded-2xl shadow-lg overflow-hidden
+               transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
+                    <!-- Image -->
+                    <div class="relative overflow-hidden">
+                        <img src="img/kue5.jpeg"
+                            class="w-full h-52 object-cover transition duration-500 group-hover:scale-110"
+                            alt="Blog Image" />
+                        <!-- Category -->
+                        <span
+                            class="absolute top-4 left-4 bg-sky-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                        mpii
+                        </span>
+                    </div>
+                    <!-- Content -->
+                    <div class="p-6">
+                        <p class="text-sm text-slate-500 mb-2">
+                            26 Desember 2025
+                        </p>
+                        <h3 class="mb-3">
+                            <a href="#" class="block font-semibold text-xl text-slate-800 dark:text-white
+                      hover:text-sky-500 transition line-clamp-2">
+                                Main disaat sakit
+                            </a>
+                        </h3>
+                        <p class="text-slate-500 mb-6 line-clamp-3">
+                            Walau lagi sakit, tapi tetep ikut main dan harus tetep senyum ceria biar hasil fotonya tetep bagus.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-1 text-sky-500 font-semibold text-sm
+                    transition-all group-hover:gap-2">
+                            Baca Selengkapnya
+                            <span class="text-lg">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <!-- Load More -->
+            <div class="text-center mt-16">
+                <button class="px-8 py-3 rounded-full bg-sky-500 text-white font-semibold
+               hover:bg-sky-600 transition hover:shadow-xl">
+                    fregmenta lainya
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-36 pb-32 bg-slate-50 dark:bg-slate-900">
+        <div class="container">
+            <!-- Heading -->
+            <div class="w-full px-4">
+                <div class="max-w-2xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-sky-400 mb-2">Contact</h4>
+                    <h2 class="font-bold text-3xl sm:text-4xl lg:text-5xl text-slate-800 dark:text-white mb-4">
+                        Hubungi saya
+                    </h2>
+                    <p class="text-slate-500 md:text-lg">
+                        Silakan hubungi saya untuk info main, jalan-jalan, atau belajar coding bersama.
+                    </p>
+                </div>
+            </div>
+            <!-- Card Form -->
+            <div class="w-full px-4">
+                <div class="max-w-2xl mx-auto bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8 sm:p-10">
+
+                    <form id="contactForm" class="space-y-8">
+                        <!-- Nama -->
+                        <div class="relative">
+                            <input type="text" id="name" required class="peer w-full bg-transparent border border-slate-300 dark:border-slate-600 
+                     text-slate-800 dark:text-white p-4 rounded-xl outline-none
+                     focus:ring-2 focus:ring-sky-400 focus:border-sky-400 transition" />
+                            <label for="name" class="absolute left-4 top-4 text-slate-500 
+                     peer-focus:text-sky-400 peer-focus:-top-3 peer-focus:text-sm
+                     peer-valid:-top-3 peer-valid:text-sm
+                     bg-white dark:bg-slate-800 px-1 transition">
+                                Nama
+                            </label>
+                        </div>
+                        <!-- Email -->
+                        <div class="relative">
+                            <input type="email" id="email" required class="peer w-full bg-transparent border border-slate-300 dark:border-slate-600 
+                     text-slate-800 dark:text-white p-4 rounded-xl outline-none
+                     focus:ring-2 focus:ring-sky-400 focus:border-sky-400 transition" />
+                            <label for="email" class="absolute left-4 top-4 text-slate-500 
+                     peer-focus:text-sky-400 peer-focus:-top-3 peer-focus:text-sm
+                     peer-valid:-top-3 peer-valid:text-sm
+                     bg-white dark:bg-slate-800 px-1 transition">
+                                Email
+                            </label>
+                        </div>
+                        <!-- Pesan -->
+                        <div class="relative">
+                            <textarea id="message" rows="4" required class="peer w-full bg-transparent border border-slate-300 dark:border-slate-600 
+                     text-slate-800 dark:text-white p-4 rounded-xl outline-none resize-none
+                     focus:ring-2 focus:ring-sky-400 focus:border-sky-400 transition"></textarea>
+                            <label for="message" class="absolute left-4 top-4 text-slate-500 
+                     peer-focus:text-sky-400 peer-focus:-top-3 peer-focus:text-sm
+                     peer-valid:-top-3 peer-valid:text-sm
+                     bg-white dark:bg-slate-800 px-1 transition">
+                                Pesan
+                            </label>
+                        </div>
+                        <!-- Button -->
+                        <button type="submit" class="w-full bg-gradient-to-r from-sky-400 to-sky-500 
+                   hover:from-sky-500 hover:to-sky-600
+                   text-white font-semibold py-3 rounded-full
+                   transition duration-300 hover:shadow-2xl active:scale-95">
+                            Kirim Pesan 🚀
+                        </button>
+                        <!-- Status -->
+                        <p id="formStatus" class="text-center text-sm"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+    <!-- Footer Start -->
+    <footer class="bg-black pt-24 pb-12">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+                    <h2 class="font-bold text-3xl text-white mb-5">Fakultas Ilmu Komputer</h2>
+                    <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
+                    <p>NOPILESTARI607@gmail.com</p>
+                    <p>Ds.Cimanglid, <Kec class="Kasomalng"></Kec></p>
+                    <p>Subang</p>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-sky-400 mb-3">Programming</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-sky-400 mb-3">Teknologi</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-sky-400 mb-3">Gaya Hidup</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#home" class="inline-block text-base hover:text-sky-400 mb-3">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="inline-block text-base hover:text-sky-400 mb-3">About</a>
+                        </li>
+                        <li>
+                            <a href="#gallery" class="inline-block text-base hover:text-sky-400 mb-3">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#clients" class="inline-block text-base hover:text-sky-400 mb-3">Clients</a>
+                        </li>
+                        <li>
+                            <a href="#blog" class="inline-block text-base hover:text-sky-400 mb-3">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="inline-block text-base hover:text-sky-400 mb-3">Contacs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full pt-10 border-t border-slate-700">
+                <!-- Social Icons -->
+                <div class="flex items-center justify-center gap-4 mb-5">
+                    <a href="https://youtube.com/" target="_blank" class="social-btn" aria-label="YouTube">
+                        <i data-lucide="youtube"></i>
+                    </a>
+                    <a href="https://instagram.com/" target="_blank" class="social-btn" aria-label="Instagram">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                    <a href="https://x.com/" target="_blank" class="social-btn" aria-label="X / Twitter">
+                        <i data-lucide="twitter"></i>
+                    </a>
+                    <a href="https://tiktok.com/" target="_blank" class="social-btn" aria-label="TikTok">
+                        <i data-lucide="music"></i>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" class="social-btn" aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                </div>
+                <!-- Footer Text -->
+                <p class="font-medium text-sm text-slate-500 text-center">
+                    Dibuat dengan
+                    <button id="loveBtn" class="relative inline-flex items-center justify-center text-pink-500 mx-1"
+                        aria-label="Love">
+                        <span id="loveIcon" class="inline-block leading-none select-none">❤️</span>
+                    </button>
+                    oleh
+                    <a href="http://instagram.com/" target="_blank" class="font-bold text-sky-400">
+                        Nopi Lestari
+                    </a>,
+                    menggunakan
+                    <a href="https://tailwindcss.com/" target="_blank" class="font-bold text-sky-500">
+                        Tailwind CSS v4.1
+                    </a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <button id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-sky-500 text-white
+           shadow-lg flex items-center justify-center text-2xl
+           hover:bg-sky-600 transition-all duration-300 opacity-0">
+        ↑
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="src/script.js" defer></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
